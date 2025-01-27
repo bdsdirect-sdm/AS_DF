@@ -1,7 +1,8 @@
-import { Form } from 'formik';
-import React, { useState } from 'react'
+import Form from './Form';
+import React from 'react';
+import FormFieldData from '../utils/Data';
 
-const handleSubmit:any = (values:FormData) => {
+const handleSubmit:any = (values:any) => {
     try{
         console.log("Data Submitted=====>", values);
     }
@@ -15,7 +16,7 @@ const DynamicForm:React.FC = () => {
   return (
     <div>
         <h1>Dynamic Form</h1>
-        <Form />
+        <Form formfield={FormFieldData} />
 
     </div>
   )

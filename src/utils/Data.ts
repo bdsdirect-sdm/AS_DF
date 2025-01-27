@@ -1,4 +1,4 @@
-export const FormFieldData = [
+const FormFieldData = [
         {
             id: 'fullName',
             htmlFor: 'fullName',
@@ -42,7 +42,16 @@ export const FormFieldData = [
             label: "weight in",
             option: [
                 {
-                    value:"Kg"
+                    value:"Kg",
+                    label: "Kg"
+                },
+                {
+                    value:"lbs",
+                    label: "lbs"
+                },
+                {
+                    value:"g",
+                    label: "g"
                 }
             ],
             name: "weight_in",
@@ -58,8 +67,27 @@ export const FormFieldData = [
             isRequired:true
         },
         {
-            
+            id: "gender",
+            htmlFor: "gender",
+            label: "Gender",
+            option: [
+                {
+                    value: "male",
+                    label: "Male"
+                },
+                {
+                    value: "female",
+                    label: "Female"
+                },
+                {
+                    value: "other",
+                    label: "Mixed"
+                }
+            ],
+            name: 'gender',
+            type: 'select',
+            isRequired: true
         }
-
-
     ]
+
+export default FormFieldData;
