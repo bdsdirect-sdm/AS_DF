@@ -14,7 +14,7 @@ const Form:React.FC<any> = ({formfield, FormSubmit}) => {
         DefaultSubmitHandler(data);
         FormSubmit(data)}} >
         <Fields fields={formfield} change={setData} />
-        <button className='btn btn-outline-dark mt-4 w-25' >Submit</button>
+        <button className='btn btn-outline-dark mt-4 w-25' type='submit' >Submit</button>
       </form>
   )
 }
