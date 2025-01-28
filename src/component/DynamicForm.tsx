@@ -15,8 +15,8 @@ const DynamicForm:React.FC = () => {
     
   return (
     <div>
-        <h1>Dynamic Form</h1>
-        <Form formfield={FormFieldData} />
+        <h1 className='text-center'>Dynamic Form</h1>
+        <Form formfield={FormFieldData} FormSubmit={handleSubmit} />
 
     </div>
   )

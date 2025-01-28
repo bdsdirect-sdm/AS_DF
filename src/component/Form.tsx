@@ -1,9 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Fields from './Fields';
 
-const Form:React.FC<any> = ({formfield}) => {
-  console.log(formfield);
+const Form:React.FC<any> = ({formfield, FormSubmit}) => {
+  const [data, setData] = useState<any>({});
+
+  const DefaultSubmitHandler = (values:any) => {
+    console.log("default submit handler values--------->", values);
+  }
+
   return (
-    <div>Form</div>
+      <form className='mx-auto w-50 mt-5 ' onSubmit={(e:any)=>{
+        e.preventDefault();
+        DefaultSubmitHandler(data);
+        FormSubmit(data)}} >
+        <Fields fields={formfield} change={setData} />
+        <button className='btn btn-outline-dark mt-4 w-25' >Submit</button>
+      </form>
   )
 }
 

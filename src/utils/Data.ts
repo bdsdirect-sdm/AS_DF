@@ -6,7 +6,8 @@ const FormFieldData = [
             name: "fullName",
             type: "text",
             placeholder: "Enter Your Full Name",
-            isRequired:true
+            isRequired:true,
+            className: 'form-control w-75 ms-5 mt-2'
         },
         {
             id: 'email',
@@ -15,7 +16,18 @@ const FormFieldData = [
             name: "email",
             type: "email",
             placeholder: "Enter Your Email",
-            isRequired:true
+            isRequired:true,
+            className: 'form-control w-75 ms-5 mt-2'
+        },
+        {
+            id: 'password',
+            htmlFor: 'password',
+            label: "Password",
+            name: "password",
+            type: "password",
+            placeholder: "**********",
+            isRequired:true,
+            className: 'form-control w-75 ms-5 mt-2'
         },
         {
             id: 'phoneNumber',
@@ -24,7 +36,8 @@ const FormFieldData = [
             name: "phoneNumber",
             type: "number",
             placeholder: "Enter Your Phone Number",
-            isRequired:true
+            isRequired:true,
+            className: 'form-control w-75 ms-5 mt-2'
         },
         {
             id: 'dob',
@@ -33,13 +46,14 @@ const FormFieldData = [
             name: "dob",
             type: "date",
             placeholder: "Enter Your Date of Birth",
-            isRequired:true
+            isRequired:true,
+            className: 'form-control w-75 ms-5 mt-2'
         },
         {
             
             id: 'weight_in',
             htmlFor: 'weight_in',
-            label: "weight in",
+            label: "weight Units",
             option: [
                 {
                     value:"Kg",
@@ -50,13 +64,14 @@ const FormFieldData = [
                     label: "lbs"
                 },
                 {
-                    value:"g",
-                    label: "g"
+                    value:"gram",
+                    label: "gram"
                 }
             ],
             name: "weight_in",
             type: "radio",
-            isRequired:false
+            isRequired:false,
+            className: 'form-check-input ms-5 mt-2'
         },
         {
             id: 'profile_photo',
@@ -64,7 +79,8 @@ const FormFieldData = [
             label: 'profile Photo',
             type: "file",
             name: "profile_photo",
-            isRequired:true
+            isRequired:true,
+            className: 'form-control w-75 ms-5 mt-2'
         },
         {
             id: "gender",
@@ -86,7 +102,16 @@ const FormFieldData = [
             ],
             name: 'gender',
             type: 'select',
-            isRequired: true
+            isRequired: true,
+            className: 'form-control w-75 ms-5 mt-2'
+        },
+        {
+            id: 'subscribe',
+            name: 'subscribe',
+            label: 'Subscribe',
+            type: 'checkbox',
+            isRequired: false,
+            className: 'form-check-input ms-5 mt-2'
         }
     ]
 
