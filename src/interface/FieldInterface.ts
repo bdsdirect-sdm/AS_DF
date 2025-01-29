@@ -14,3 +14,15 @@ export interface FieldInterface{
   isRequired: boolean;
   className?: string;
 }
+
+export interface DataInterface{
+  fullName: string;
+  email: string;
+  password: string;
+  phoneNumber: any;
+  dob: any;
+  weight_in: string;
+  // profile_photo: null,
+  gender: string;
+  subscribe: boolean;
+}
